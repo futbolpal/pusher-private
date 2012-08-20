@@ -1,0 +1,13 @@
+{
+  "name": "pusher-private",
+  "description": "This package allows private Pusher messages to be sent to single clients.",
+  "author": "Jonathan Lewis <futbolpal@gmail.com>",
+  "dependencies": {
+	"socket.io" : "0.9.10",
+	"node-pusher" : "0.0.2",
+	"node-static" : ".0.6.0"
+  },
+  "devDependencies": {
+  },
+  "engine": "node >= 0.6.18"
+}

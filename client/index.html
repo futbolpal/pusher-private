@@ -1,0 +1,31 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="//js.pusher.com/1.12/pusher.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+<script src="lib/pusher-private.js"></script>
+
+<script src="model.js"></script>
+
+<html>
+	<body>
+	<h2>Pusher-Private</h2>
+	<p>
+		<p>Pusher.com is a websocket cloud based service to provide an easy way to send push notifications from your web app to a group of clients.</p>
+		<p>However its libraries do not have a built in way to easily send a message to the current client making a request to your server or app</p>
+	</p>
+	<p>
+	socket.io contains a unique client id when each client connects to the server.  
+	On connection, the Pusher channel information (one private and one public) is
+	sent to the client.  The client can now send a socket.io message 'trigger-public'
+	or 'trigger-private' to request a public or private Pusher trigger respectively.  
+	</p>
+	<p>
+	<div id="info_private"></div>
+	<div id="info_public"></div>
+	<button id="request_private">Request Private</button>
+	<button id="request_public">Request Public</button>
+	</p>
+	<div id="log"></div>
+	</body>
+</html>

@@ -3,6 +3,11 @@ pusher-private
 
 This demonstrates added functionality to send private messages to a single client using Pusher
 
+Pusher.com is a websocket cloud based service to provide an easy way to send push notifications from your web app to a group of clients
+
+However its libraries do not have a built in way to easily send a message to the current client making a request to your server or app
+	
+
 # pusher-private.js
 
 This portable library allows your web application to accept private messages sent only to you as a client and not publicly distributed to all subscribed clients.
